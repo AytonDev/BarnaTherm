@@ -259,6 +259,7 @@ section.first-page-text {
 .lines{
     width: 100%;
     color: $white;
+    overflow: hidden;
     button {
         background: $white;
     }
@@ -268,8 +269,21 @@ section.first-page-text {
     p {
         font-weight: 100;
     }
+    .image {
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+        &.fire-image {
+            left: -20px;
+        }
+        img {
+            width: 85px;
+            height: auto;
+        }
+    }
     .fire {
-        padding: 2rem 1rem;
+        position: relative;
+        padding: 2rem 1rem 2rem 4rem;
         flex-direction: column;
         display: flex;
         align-items: center;
@@ -281,8 +295,10 @@ section.first-page-text {
         }
     }
     .snow {
+        position: relative;
         flex-direction: column;
-        padding: 2rem 1rem;
+        text-align: right;
+        padding: 2rem 4rem 2rem 1rem;
         display: flex;
         align-items: center;
         justify-content: space-around;
