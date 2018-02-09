@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BarnaTherm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    <header>
+            <nav class="main-nav">
+                    <div class="logo-frame">
+                        <img src="../img/logo.png" alt="BarmaTherm" class="logo">
+                        <button type="button" id="navOpener">
+                            <i class="fas fa-bars"></i>
+                        </button>           
+                    </div>
+                    <ul class="navigation">
+                        <li><a class="active" href="#">Aktuality</a></li>
+                        <li><a href="#">Dotace</a></li>
+                        <li><a href="#">Certifikáty</a></li>
+                        <li><a href="#">Kariéra</a></li>
+                        <li><a href="#">Kontakty</a></li>
+                    </ul>
+                </nav>
+    </header>
+    <div class="slider">
+            <div class="frame slide ">
+                <img src="../img/image.jpg">
+            </div>
+            <div class="frame slide ">
+                    <img src="../img/image2.jpg">
+            </div>
+            <div class="text-frame">
+                <div class="text-box">
+                    <div class="text-item" onclick="getInfo(0)">
+                        <h3>Rodinné domy  </h3><i class="fas fa-angle-down"></i>
+                        <div class="info" >
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                        Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus 
+                                        odio a lectus. 
+                            </p>
+                            <button class="btn">Více</button>
+                        </div>
+                       
+                    </div>
+                    <div class="text-item" onclick="getInfo(1)">
+                            <h3>Servis a údržba</h3> <i class="fas fa-angle-down"></i>
+                            <div class="info">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                        Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus 
+                                        odio a lectus. 
+                                </p>
+                                <button class="btn">Více</button>
+                            </div>
+                    </div>
+                    <!-- The dots/circles -->
+                    <div class="dots" style="text-align:center">
+                        <span class="dot" onclick="getSlide(0)"></span> 
+                        <span class="dot" onclick="getSlide(1)"></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="first-page-text">
+                <article >
+                    <h2>
+                           Rodinné domy
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus luctus egestas leo. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Integer in sapien. Cras elementum. Donec vitae arcu. Maecenas libero. Fusce consectetuer risus a nunc. Vivamus ac leo pretium faucibus. Etiam quis quam. Pellentesque arcu.
+                    </p>
+                </article>
+        </section>
+        <section class="tiles">
+            <div class="tile">
+                <div class="text">
+                        <h4>Vytápění</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
+               <div class="img-frame">
+                   <img src="../img/kotel.png" alt="Vytápění">
+               </div>
+            </div>
+            <div class="tile">
+                    <div class="text">
+                            <h4>Vytápění</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
+                   <div class="img-frame">
+                       <img src="../img/kotel.png" alt="Vytápění">
+                   </div>
+            </div>
+            <div class="tile">
+                    <div class="text">
+                            <h4>Vytápění</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
+                   <div class="img-frame">
+                       <img src="../img/kotel.png" alt="Vytápění">
+                   </div>
+            </div>
+            <div class="tile">
+                    <div class="text">
+                            <h4>Vytápění</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
+                   <div class="img-frame">
+                       <img src="../img/kotel.png" alt="Vytápění">
+                   </div>
+            </div>
+            <div class="tile">
+                    <div class="text">
+                            <h4>Vytápění</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
+                   <div class="img-frame">
+                       <img src="../img/kotel.png" alt="Vytápění">
+                   </div>
+            </div>
+            <div class="tile">
+                    <div class="text">
+                            <h4>Vytápění</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
+                   <div class="img-frame">
+                       <img src="../img/kotel.png" alt="Vytápění">
+                   </div>
+            </div>
+            <div class="tile">
+                    <div class="text">
+                            <h4>Vytápění</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
+                   <div class="img-frame">
+                       <img src="../img/kotel.png" alt="Vytápění">
+                   </div>
+            </div>
+            <div class="tile">
+                    <div class="text">
+                            <h4>Vytápění</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
+                   <div class="img-frame">
+                       <img src="../img/kotel.png" alt="Vytápění">
+                   </div>
+            </div>
+            <div class="tile">
+                    <div class="text">
+                            <h4>Vytápění</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
+                   <div class="img-frame">
+                       <img src="../img/kotel.png" alt="Vytápění">
+                   </div>
+            </div>
+        </div>
+            
+        </section>
+   <footer>
+        <div class="logo-footer-column">
+            <h3>Barna Therm</h3>
+        </div>
+        <div class="nav-footer-column">
+            <section class="left">
+                    <h3>Téma</h3>
+                    <ul class="footer-nav">
+                        <li>Rodinné domy</li>
+                        <li>Komerční</li>
+                        <li>Projekty</li>
+                        <li>Servis a údržba</li>
+                    </ul>
+            </section>
+            <section class="right">
+                    <h3>Podpora</h3>
+                    <ul class="footer-nav">
+                        <li>Kontakt</li>
+                        <li>Ke stažení</li>
+                        <li>Kariera</li>
+                        <li>Mapa stránek</li>
+                    </ul>
+            </section>              
+        </div>
+        <div class="social-footer-column">
+                <p><i class="fb fab fa-facebook-f"></i>&nbsp&nbsp&nbspSledujte nás i na Facebooku! </p>
+        </div>
+    </footer>
+</body>
+</html>
