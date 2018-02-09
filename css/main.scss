@@ -1,5 +1,6 @@
 $black : #2f2f2f;
 $grey: #585858;
+$ligthgrey: #8c8c8c;
 $white : #FFFFFF;
 $red : #ff7a76;
 $darkRed: #ff4048;
@@ -319,7 +320,7 @@ section.first-page-text {
     padding: 0 1.8rem;
     .tile {
         color: $white;
-        background-color: $grey;
+        background-color: $ligthgrey;
         display: flex;
         width: 100%;
         margin:  1rem 0;
