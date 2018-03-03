@@ -105,8 +105,8 @@ header nav.main-nav ul li a {
 
 header nav.main-nav ul li a:hover, header nav.main-nav ul li a.active {
   text-decoration: none;
-  box-shadow: inset 0 0px 0 white, inset 0 -1.5px 0 #ff4048;
-  color: #ff4048;
+  box-shadow: inset 0 0px 0 white, inset 0 -1.5px 0 #ea4e41;
+  color: #ea4e41;
 }
 
 @media screen and (min-width: 480px) {
@@ -382,7 +382,7 @@ section.first-page-text .progressbar-pic img {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: #ff4048;
+  background: #ea4e41;
   width: 100%;
 }
 
