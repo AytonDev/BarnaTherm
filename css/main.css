@@ -591,6 +591,13 @@ footer .nav-footer-column section.right h3 {
   footer .nav-footer-column section {
     width: 100%;
   }
+  footer .nav-footer-column section.left, footer .nav-footer-column section.right {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  footer .nav-footer-column section.left h3, footer .nav-footer-column section.right h3 {
+    margin: 1rem;
+  }
 }
 
 footer .social-footer-column {
@@ -610,6 +617,7 @@ footer .social-footer-column .fb {
 @media screen and (max-width: 480px) {
   footer .social-footer-column {
     width: 100%;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
