@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 932 138" style="enable-background:new 0 0 932 138;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'KohinoorBangla-Regular';}
+	.st3{font-size:34px;}
+	.st4{fill:url(#SVGID_2_);}
+	.st5{fill:none;enable-background:new    ;}
+	.st6{fill:url(#SVGID_3_);}
+	.st7{letter-spacing:-1;}
+	.st8{fill:url(#SVGID_4_);}
+</style>
+<title>progressbar</title>
+<g id="Vrstva_2">
+	<g id="Vrstva_1-2">
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="228" y1="71" x2="482" y2="71" gradientTransform="matrix(1 0 0 -1 0 140)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="0" style="stop-color:#3FA9F5"/>
+			<stop  offset="1" style="stop-color:#0075BE"/>
+		</linearGradient>
+		<polygon class="st0" points="228,0 429.8,0 482,68.4 430.5,138 228,138 278.8,68.4 		"/>
+		<text transform="matrix(1 0 0 1 326 82)" class="st1 st2 st3">MONTÁŽ</text>
+		
+			<image style="overflow:visible;enable-background:new    ;" width="512" height="512" xlink:href="986FC848107C6170.png"  transform="matrix(9.000000e-02 0 0 9.000000e-02 281 46)">
+		</image>
+		
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="678" y1="71" x2="932" y2="71" gradientTransform="matrix(1 0 0 -1 0 140)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="0" style="stop-color:#3FA9F5"/>
+			<stop  offset="1" style="stop-color:#0075BE"/>
+		</linearGradient>
+		<polygon class="st4" points="678,0 879.8,0 932,68.4 880.5,138 678,138 728.8,68.4 		"/>
+		<text transform="matrix(1 0 0 1 787 80)" class="st1 st2 st3">ÚDRŽ</text>
+		<text transform="matrix(1 0 0 1 869.8201 80)" class="st1 st2 st3">B</text>
+		<text transform="matrix(1 0 0 1 890.22 80)" class="st1 st2 st3">A</text>
+		
+			<image style="overflow:visible;" width="2000" height="2000" xlink:href="986FC848107C6171.png"  transform="matrix(2.000000e-02 0 0 2.000000e-02 734 43)">
+		</image>
+		<path class="st5" d="z"/>
+		
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="452" y1="71" x2="706" y2="71" gradientTransform="matrix(1 0 0 -1 0 140)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="0" style="stop-color:#3FA9F5"/>
+			<stop  offset="1" style="stop-color:#0075BE"/>
+		</linearGradient>
+		<polygon class="st6" points="452,0 653.8,0 706,68.4 654.5,138 452,138 502.8,68.4 		"/>
+		<text transform="matrix(1 0 0 1 571 82)" class="st1 st2 st3">SE</text>
+		<text transform="matrix(1 0 0 1 607.04 82)" class="st1 st2 st3 st7">R</text>
+		<text transform="matrix(1 0 0 1 625.98 82)" class="st1 st2 st3">VIS</text>
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1600" height="1602" xlink:href="986FC848107C6177.png"  transform="matrix(3.000000e-02 0 0 2.996255e-02 516 47)">
+		</image>
+		
+			<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="0" y1="71" x2="254" y2="71" gradientTransform="matrix(1 0 0 -1 0 140)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="0" style="stop-color:#3FA9F5"/>
+			<stop  offset="1" style="stop-color:#0075BE"/>
+		</linearGradient>
+		<polygon class="st8" points="0,0 201.8,0 254,68.4 202.5,138 0,138 50.8,68.4 		"/>
+		<text transform="matrix(1 0 0 1 119 80)" class="st1 st2 st3">NÁVRH</text>
+		
+			<image style="overflow:visible;enable-background:new    ;" width="200" height="200" xlink:href="986FC848107C6172.png"  transform="matrix(0.22 0 0 0.22 61 40)">
+		</image>
+	</g>
+</g>
+</svg>
