@@ -129,7 +129,7 @@ header nav.main-nav ul li a:hover, header nav.main-nav ul li a.active {
 }
 
 .services-nav {
-  background-color: #eb4332;
+  background-color: #ea4e41;
   font-weight: 400;
   display: flex;
   justify-content: space-around;
@@ -469,7 +469,7 @@ section.first-page-text .progressbar-pic img {
   display: flex;
   flex-flow: row;
   align-items: center;
-  color: #eb4332;
+  color: #ea4e41;
 }
 
 .map .place-info {
