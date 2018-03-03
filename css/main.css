@@ -161,10 +161,6 @@ header nav.main-nav ul li a:hover, header nav.main-nav ul li a.active {
   }
 }
 
-h1 {
-  display: none;
-}
-
 /*SLIDER */
 .slider {
   width: 100%;
@@ -337,6 +333,12 @@ section.first-page-text .progressbar-pic {
 section.first-page-text .progressbar-pic img {
   max-width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 480px) {
+  section.first-page-text .progressbar-pic {
+    display: none;
+  }
 }
 
 /*Lines */

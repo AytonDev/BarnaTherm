@@ -149,9 +149,7 @@ header {
     }    
 }
 
-h1 {
-    display: none;
-}
+
 
 
 
@@ -305,6 +303,9 @@ section.first-page-text {
         img {
             max-width: 100%;
             height: auto;
+        }
+        @media screen and (max-width: 480px) {
+            display: none;
         }
     }
 }
