@@ -120,9 +120,11 @@ header {
     }
    
 }
-.navbar{
+.services-nav{
     background-color: $logoRed;
     font-weight: 400;
+    display: flex;
+    justify-content: space-around;
     .icon{
         width: 33px;
         height: 33px;
@@ -141,6 +143,10 @@ header {
             }
             
         }
+    @media screen and (max-width: 768px) {
+       display: none;
+        
+    }    
 }
 
 h1 {
@@ -274,7 +280,10 @@ h1 {
 section.first-page-text {
     width: 100%;
     padding: 2.5rem 1rem;
-    text-align: center;
+    text-align: left;
+    p {
+        margin:  0 auto 1.5rem auto;
+    }
     h2{
         margin:  0 auto 1.5rem auto;
         padding-bottom: 1rem;
@@ -284,6 +293,19 @@ section.first-page-text {
     }
     @media screen and (min-width: 480px) {
         padding: 4rem;
+    }
+    @media screen and (min-width: 1440px) {
+        padding: 4rem 11rem;
+    }
+    .progressbar-pic {
+        width: 100%;
+        margin: 3rem 0;
+        overflow: hidden;
+        text-align: center;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     }
 }
 
@@ -385,9 +407,32 @@ section.first-page-text {
     width: fit-content;
     box-shadow: inset 0 0px 0 white, inset 0 -1.5px 0 $red;
    }
-   #map {
-    height: 100%;
-    height: 600px;
+   .place {
+    display:  flex;
+    flex-flow: row;
+    align-items: center;
+    color: $logoRed;
+    
+   }
+   .place-info {
+       width: 50%;
+       text-align: right;
+       padding: 2rem;
+       overflow: hidden;
+       &.left{
+           text-align: left;
+       }
+       h4 {
+           font-size: 2rem;
+           margin: 0;
+       }
+       p {
+           font-size: 1.5rem;
+       }
+   }
+   #map, #map2 {
+    width: 50%;
+    height: 400px;
 } 
 }
 

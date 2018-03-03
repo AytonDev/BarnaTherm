@@ -128,18 +128,20 @@ header nav.main-nav ul li a:hover, header nav.main-nav ul li a.active {
   }
 }
 
-.navbar {
+.services-nav {
   background-color: #eb4332;
   font-weight: 400;
+  display: flex;
+  justify-content: space-around;
 }
 
-.navbar .icon {
+.services-nav .icon {
   width: 33px;
   height: 33px;
   margin: 5px;
 }
 
-.navbar a {
+.services-nav a {
   text-align: center !important;
   color: #FFFFFF !important;
   display: block;
@@ -148,9 +150,15 @@ header nav.main-nav ul li a:hover, header nav.main-nav ul li a.active {
   text-decoration: none;
 }
 
-.navbar a:hover, .navbar a.active {
+.services-nav a:hover, .services-nav a.active {
   text-decoration: none;
   box-shadow: inset 0 0px 0, inset 0 -1.5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .services-nav {
+    display: none;
+  }
 }
 
 h1 {
@@ -292,7 +300,11 @@ h1 {
 section.first-page-text {
   width: 100%;
   padding: 2.5rem 1rem;
-  text-align: center;
+  text-align: left;
+}
+
+section.first-page-text p {
+  margin: 0 auto 1.5rem auto;
 }
 
 section.first-page-text h2 {
@@ -307,6 +319,24 @@ section.first-page-text h2 {
   section.first-page-text {
     padding: 4rem;
   }
+}
+
+@media screen and (min-width: 1440px) {
+  section.first-page-text {
+    padding: 4rem 11rem;
+  }
+}
+
+section.first-page-text .progressbar-pic {
+  width: 100%;
+  margin: 3rem 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+section.first-page-text .progressbar-pic img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*Lines */
@@ -400,7 +430,6 @@ section.first-page-text h2 {
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .tiles .tile {
-<<<<<<< HEAD
     width: 48%;
   }
 }
@@ -422,29 +451,6 @@ section.first-page-text h2 {
     width: 31%;
   }
 }
-=======
-    color: #FFFFFF;
-    background-color: #8c8c8c;
-    display: flex;
-    width: 100%;
-    margin: 1rem 0;
-    padding: 1.5rem;
-    align-items: center;
-    justify-content: center; }
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-      .tiles .tile {
-        width: 48%; } }
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    .tiles {
-      justify-content: space-between; }
-      .tiles .tile {
-        width: 48%; } }
-  @media screen and (min-width: 768px) {
-    .tiles {
-      justify-content: space-between; }
-      .tiles .tile {
-        width: 31%; } }
->>>>>>> 7c9c4da3cb353a3361332ecfa7e49e7b20d22f64
 
 /*Map*/
 .map {
@@ -459,9 +465,36 @@ section.first-page-text h2 {
   box-shadow: inset 0 0px 0 white, inset 0 -1.5px 0 #ff7a76;
 }
 
-.map #map {
-  height: 100%;
-  height: 600px;
+.map .place {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  color: #eb4332;
+}
+
+.map .place-info {
+  width: 50%;
+  text-align: right;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.map .place-info.left {
+  text-align: left;
+}
+
+.map .place-info h4 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.map .place-info p {
+  font-size: 1.5rem;
+}
+
+.map #map, .map #map2 {
+  width: 50%;
+  height: 400px;
 }
 
 footer {
