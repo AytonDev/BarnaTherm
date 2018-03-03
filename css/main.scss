@@ -429,6 +429,22 @@ section.first-page-text {
        p {
            font-size: 1.5rem;
        }
+       .navigace{
+           width: 182px;
+           height: 49px;
+         
+           a {
+               
+                &:hover{
+            -webkit-box-shadow: 0px 0px 29px 1px rgba(0,0,0,0.33);
+            -moz-box-shadow: 0px 0px 29px 1px rgba(0,0,0,0.33);
+            box-shadow: 0px 0px 29px 1px rgba(0,0,0,0.33);
+           
+                }
+                
+            
+            }
+       }
    }
    #map, #map2 {
     width: 50%;

@@ -492,6 +492,17 @@ section.first-page-text .progressbar-pic img {
   font-size: 1.5rem;
 }
 
+.map .place-info .navigace {
+  width: 182px;
+  height: 49px;
+}
+
+.map .place-info .navigace a:hover {
+  -webkit-box-shadow: 0px 0px 29px 1px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 0px 29px 1px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 0px 29px 1px rgba(0, 0, 0, 0.33);
+}
+
 .map #map, .map #map2 {
   width: 50%;
   height: 400px;
