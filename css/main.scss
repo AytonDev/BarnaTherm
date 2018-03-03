@@ -469,10 +469,17 @@ footer {
     .logo-footer-column{
         width: 33%;
         h3{
-            text-align: center
+            text-align: center;
+            overflow: hidden;
+            img {
+                width: 50%;
+                height: auto;
+            }
+            
         }
         @media screen and (max-width: 480px) { 
             width: 100%;
+            margin: 1.5rem 0 1rem 0;
         }
         
     }
