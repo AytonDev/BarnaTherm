@@ -433,7 +433,22 @@ section.first-page-text {
    #map, #map2 {
     width: 50%;
     height: 400px;
-} 
+    }
+    @media screen and (max-width: 768px) {
+        .place{
+            flex-flow: column;
+            #map, #map2, .place-info{
+                width: 100%;
+            }
+            &:nth-of-type(2) {
+                #map2 {
+                   order: 2;
+                }
+            }
+           
+        }
+        
+    }
 }
 
 

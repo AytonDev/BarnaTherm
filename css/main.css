@@ -497,6 +497,18 @@ section.first-page-text .progressbar-pic img {
   height: 400px;
 }
 
+@media screen and (max-width: 768px) {
+  .map .place {
+    flex-flow: column;
+  }
+  .map .place #map, .map .place #map2, .map .place .place-info {
+    width: 100%;
+  }
+  .map .place:nth-of-type(2) #map2 {
+    order: 2;
+  }
+}
+
 footer {
   width: 100%;
   position: relative;
