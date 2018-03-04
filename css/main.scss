@@ -11,6 +11,9 @@ $fontNav :150% 'Hind', sans-serif;
 
 .body {
     background-color:$blue;
+    h1{
+        font:$fontNav;
+    }
 }
 header {
     nav.main-nav {
