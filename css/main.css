@@ -2,6 +2,10 @@
   background-color: #009bcd;
 }
 
+.body h1 {
+  font: 150% "Hind", sans-serif;
+}
+
 header nav.main-nav .logo-frame {
   display: flex;
   justify-content: space-between;
