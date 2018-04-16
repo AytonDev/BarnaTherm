@@ -20,11 +20,9 @@ $(document).ready(function(){
 });
 
 function getInfo(number){
-   
     if(screen.width <= 480){
         $(info[number]).toggle();
     }
-
 }
 function getSlide(number){
     if(screen.width > 480){
@@ -59,6 +57,7 @@ function nextSlide(slideIndex, slides, slideTexts, dots) {
 
 function initSlider(slideIndex, slides,slideTexts,dots) {
     for(var i = 0; i < slides.length; ++i){
+        console.log(slides.length);
         slides[i].style.display = "none";
         slideTexts[i].style.display = "none";
     }

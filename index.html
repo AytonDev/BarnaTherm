@@ -22,7 +22,7 @@
             <div class="logo-frame">
                 <h1><img src="./img/topper-svg.svg" alt="BarnaTherm" class="topper"></h1>
                 <button type="button" id="navOpener">
-                    <i class="fas fa-bars"></i>
+                   <span >Menu</span> <i class="fas fa-bars"></i>
                 </button>           
             </div>
             <ul class="navigation">
@@ -33,13 +33,13 @@
                 <li><a href="#">Kontakty</a></li>
             </ul>
         </nav>
-    </header>
     <div class="services-nav">
             <a class="navbar-brand" id="" href="#"><img src="./img/icon_house.png" alt="BarnaTherm" class="icon">Rodinné domy</a>
             <a class="navbar-brand" href="#"><img src="./img/icon_industry.png" alt="BarnaTherm" class="icon">Komerční prostory</a>
             <a class="navbar-brand" href="#"><img src="./img/icon_set.png" alt="BarnaTherm" class="icon">Servis a údržba</a>
             <a class="navbar-brand" href="#"><img src="./img/icon_project.png" alt="BarnaTherm" class="icon">Projekty</a>
     </div>
+</header>
     <div class="slider">
         <div class="frame slide ">
             <img src="./img/image.jpg">
@@ -47,10 +47,17 @@
         <div class="frame slide ">
                 <img src="./img/image2.jpg">
         </div>
+        <div class="frame slide ">
+            <img src="./img/image2.jpg">
+        </div>
+        <div class="frame slide ">
+            <img src="./img/image2.jpg">
+        </div>
+
         <div class="text-frame">
             <div class="text-box">
                 <div class="text-item" onclick="getInfo(0)">
-                    <h3>Rodinné domy  </h3><i class="fas fa-angle-down"></i>
+                    <h3><img src="./img/icon_house.png" alt="BarnaTherm" class="icon">Rodinné domy</h3><i class="fas fa-angle-down"></i>
                     <div class="info" >
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                                     Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus 
@@ -61,7 +68,18 @@
                    
                 </div>
                 <div class="text-item" onclick="getInfo(1)">
-                        <h3>Servis a údržba</h3> <i class="fas fa-angle-down"></i>
+                    <h3><img src="./img/icon_industry.png" alt="BarnaTherm" class="icon">Komerční prostory</h3><i class="fas fa-angle-down"></i>
+                    <div class="info" >
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                    Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus 
+                                    odio a lectus. 
+                        </p>
+                        <button class="btn">Více</button>
+                    </div>
+                   
+                </div>
+                <div class="text-item" onclick="getInfo(2)">
+                        <h3><img src="./img/icon_set.png" alt="BarnaTherm" class="icon">Servis a údržba</h3><i class="fas fa-angle-down"></i>
                         <div class="info">
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                                     Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus 
@@ -70,17 +88,29 @@
                             <button class="btn">Více</button>
                         </div>
                 </div>
+                <div class="text-item" onclick="getInfo(3)">
+                    <h3><img src="./img/icon_project.png" alt="BarnaTherm" class="icon">Projekty</h3><i class="fas fa-angle-down"></i>
+                    <div class="info">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus 
+                                odio a lectus. 
+                        </p>
+                        <button class="btn">Více</button>
+                    </div>
+            </div>
                 <!-- The dots/circles -->
                 <div class="dots" style="text-align:center">
                     <span class="dot" onclick="getSlide(0)"></span> 
                     <span class="dot" onclick="getSlide(1)"></span> 
+                    <span class="dot" onclick="getSlide(2)"></span> 
+                    <span class="dot" onclick="getSlide(3)"></span>
                 </div>
             </div>
         </div>
     </div>
     <section class="first-page-text">
         <article >
-            <h1>
+            <h2>
                     BARNATHERM - Řešení výtapěcích, chladících a průmyslových energetických systémů
             </h1>
             <p>
@@ -88,9 +118,9 @@
             </p>
             <div class="progressbar-pic">
                 <img src="./img/barnatherm_progressbar.png" alt="návrh,montáž,servis,údržba">
-                
-                    
-                  
+            </div>
+            <div class="progressbar-pic-mobile">
+                <img src="./img/progressbar-mobile.png" alt="návrh,montáž,servis,údržba">
             </div>
         </article>
     </section>
