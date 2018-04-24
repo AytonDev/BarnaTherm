@@ -13,68 +13,103 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
     <script src="../js/main.js"></script>
+  
 </head>
 <body>
     <header>
-            <nav class="main-nav">
-                    <div class="logo-frame">
-                        <img src="../img/logo.png" alt="BarmaTherm" class="logo">
-                        <button type="button" id="navOpener">
-                            <i class="fas fa-bars"></i>
-                        </button>           
-                    </div>
-                    <ul class="navigation">
-                        <li><a class="active" href="#">Aktuality</a></li>
-                        <li><a href="#">Dotace</a></li>
-                        <li><a href="#">Certifikáty</a></li>
-                        <li><a href="#">Kariéra</a></li>
-                        <li><a href="#">Kontakty</a></li>
-                    </ul>
-                </nav>
-    </header>
-    <div class="slider">
-            <div class="frame slide ">
-                <img src="../img/image.jpg">
+        <nav class="main-nav">
+            <div class="logo-frame">
+                <h1><img src="../img/topper-svg.svg" alt="BarnaTherm" class="topper"></h1>
+                <div id="navOpener">
+                   <span >Menu</span> <i class="fas fa-bars"></i>
+                </div>           
             </div>
-            <div class="frame slide ">
-                    <img src="../img/image2.jpg">
-            </div>
-            <div class="text-frame">
-                <div class="text-box">
-                    <div class="text-item" onclick="getInfo(0)">
-                        <h3>Rodinné domy  </h3><i class="fas fa-angle-down"></i>
-                        <div class="info" >
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                                        Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus 
-                                        odio a lectus. 
+            <ul class="navigation">
+                <li><a class="active" href="#">Aktuality</a></li>
+                <li><a href="#">Dotace</a></li>
+                <li><a href="#">Certifikáty</a></li>
+                <li><a href="#">Kariéra</a></li>
+                <li><a href="#">Kontakty</a></li>
+            </ul>
+        </nav>
+    <div class="services-nav">
+            <a class="navbar-brand" id="" href="#"><img src="../img/icon_house.png" alt="BarnaTherm" class="icon">Rodinné domy</a>
+            <a class="navbar-brand" href="#"><img src="../img/icon_industry.png" alt="BarnaTherm" class="icon">Komerční prostory</a>
+            <a class="navbar-brand" href="#"><img src="../img/icon_set.png" alt="BarnaTherm" class="icon">Servis a údržba</a>
+            <a class="navbar-brand" href="#"><img src="../img/icon_project.png" alt="BarnaTherm" class="icon">Projekty</a>
+    </div>
+</header>
+<div class="slider">
+       
+    <div class="frame slide ">
+        <img src="../img/rodinn.jpg">
+    </div>
+    <div class="frame slide ">
+            <img src="../img/komerce.jpg">
+    </div>
+    <div class="frame slide ">
+        <img src="../img/servis.jpg">
+    </div>
+    <div class="frame slide ">
+        <img src="../img/projekt.jpg">
+    </div>
+    <div class="text-frame">
+        <div class="text-box">
+            <div class="text-item" onclick="getInfo(0)">
+                <h3><img src="../img/icon_house.png" alt="BarnaTherm" class="icon">Rodinné domy</h3><i class="fas fa-angle-down"></i>
+                <div class="info" >
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus 
+                                    odio a lectus. 
+                    </p>
+                        <button class="btn">Více</button>
+                    </div>    
+                </div>
+                <div class="text-item" onclick="getInfo(1)">
+                    <h3><img src="../img/icon_industry.png" alt="BarnaTherm" class="icon">Komerční prostory</h3><i class="fas fa-angle-down"></i>
+                    <div class="info" >
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                    Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus 
+                                    odio a lectus. 
+                        </p>
+                        <button class="btn">Více</button>
+                    </div>   
+                </div>
+                <div class="text-item" onclick="getInfo(2)">
+                        <h3><img src="../img/icon_set.png" alt="BarnaTherm" class="icon">Servis a údržba</h3><i class="fas fa-angle-down"></i>
+                        <div class="info">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                    Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus 
+                                    odio a lectus. 
                             </p>
                             <button class="btn">Více</button>
                         </div>
-                       
+                </div>
+                <div class="text-item" onclick="getInfo(3)">
+                    <h3><img src="../img/icon_project.png" alt="BarnaTherm" class="icon">Projekty</h3><i class="fas fa-angle-down"></i>
+                    <div class="info">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus 
+                                odio a lectus. 
+                        </p>
+                        <button class="btn">Více</button>
                     </div>
-                    <div class="text-item" onclick="getInfo(1)">
-                            <h3>Servis a údržba</h3> <i class="fas fa-angle-down"></i>
-                            <div class="info">
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                                        Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus 
-                                        odio a lectus. 
-                                </p>
-                                <button class="btn">Více</button>
-                            </div>
-                    </div>
-                    <!-- The dots/circles -->
-                    <div class="dots" style="text-align:center">
-                        <span class="dot" onclick="getSlide(0)"></span> 
-                        <span class="dot" onclick="getSlide(1)"></span> 
-                    </div>
+            </div>
+                <!-- The dots/circles -->
+                <div class="dots" style="text-align:center">
+                    <span class="dot" onclick="getSlide(0)"></span> 
+                    <span class="dot" onclick="getSlide(1)"></span> 
+                    <span class="dot" onclick="getSlide(2)"></span> 
+                    <span class="dot" onclick="getSlide(3)"></span>
                 </div>
             </div>
         </div>
+        <script>getSlide(0)</script>
+    </div>
+    
         <section class="first-page-text">
                 <article >
-                    <h2>
-                           Rodinné domy
-                    </h2>
+                    <h2>Rodinné domy</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus luctus egestas leo. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Integer in sapien. Cras elementum. Donec vitae arcu. Maecenas libero. Fusce consectetuer risus a nunc. Vivamus ac leo pretium faucibus. Etiam quis quam. Pellentesque arcu.
                     </p>
@@ -92,7 +127,7 @@
             </div>
             <div class="tile">
                     <div class="text">
-                            <h4>Vytápění</h4>
+                            <h4>Automatické kotle</h4>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
                    <div class="img-frame">
@@ -101,7 +136,7 @@
             </div>
             <div class="tile">
                     <div class="text">
-                            <h4>Vytápění</h4>
+                            <h4>Plynové kotle</h4>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
                    <div class="img-frame">
@@ -110,7 +145,7 @@
             </div>
             <div class="tile">
                     <div class="text">
-                            <h4>Vytápění</h4>
+                            <h4>Tepelná čerpadla</h4>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
                    <div class="img-frame">
@@ -119,7 +154,7 @@
             </div>
             <div class="tile">
                     <div class="text">
-                            <h4>Vytápění</h4>
+                            <h4>Klimatizace a rekupetace</h4>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
                    <div class="img-frame">
@@ -128,7 +163,7 @@
             </div>
             <div class="tile">
                     <div class="text">
-                            <h4>Vytápění</h4>
+                            <h4>Vzduchotechnika a komíny</h4>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
                    <div class="img-frame">
@@ -137,7 +172,7 @@
             </div>
             <div class="tile">
                     <div class="text">
-                            <h4>Vytápění</h4>
+                            <h4>Solární kolektory a fotovoltaika</h4>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
                    <div class="img-frame">
@@ -146,7 +181,7 @@
             </div>
             <div class="tile">
                     <div class="text">
-                            <h4>Vytápění</h4>
+                            <h4>Kanalizace</h4>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
                    <div class="img-frame">
@@ -155,11 +190,11 @@
             </div>
             <div class="tile">
                     <div class="text">
-                            <h4>Vytápění</h4>
+                            <h4>Vodoinstalace</h4>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
                    <div class="img-frame">
-                       <img src="../img/kotel.png" alt="Vytápění">
+                       <img src="../img/icons/4Vodoinstalace.svg" alt="Vytápění">
                    </div>
             </div>
         </div>

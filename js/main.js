@@ -2,7 +2,7 @@ var slides = document.getElementsByClassName("slide");
 var slideTexts =  document.getElementsByClassName("text-item");
 var dots = document.getElementsByClassName("dot");
 var info = document.getElementsByClassName("info");
-var slideIndex = 1;
+var slideIndex = 3;
 $(document).ready(function(){
     $("#navOpener").click(function(){
         $(".navigation").toggle();
@@ -14,10 +14,16 @@ $(document).ready(function(){
          slideIndex = nextSlide(slideIndex, slides,slideTexts,dots);
         
       });*/ 
+      
+    
+
    }
    
 
 });
+function startSlider() {
+    setInterval(nextSlide, 5000);
+}
 
 function getInfo(number){
     if(screen.width <= 480){
@@ -38,21 +44,19 @@ function getSlide(number){
 }
  
 
-function nextSlide(slideIndex, slides, slideTexts, dots) {
+function nextSlide() {
     slides[slideIndex].style.display = "none";
     slideTexts[slideIndex].style.display = "none";
     dots[slideIndex].classList.remove("active")
     if(slideIndex == slides.length-1){
-        slides[0].style.display = "block";
-        slideTexts[0].style.display = "block";
-        dots[0].classList.add("active")
-        return 0;
-    }
+        slideIndex=0;
+    }else 
+     ++slideIndex;
        
-    slides[++slideIndex].style.display = "block";
+    slides[slideIndex].style.display = "block";
     slideTexts[slideIndex].style.display = "block";
-    dots[slideIndex].classList.add("active")
-    return slideIndex;
+    dots[slideIndex].classList.add("active");
+    //return slideIndex;
 }
 
 function initSlider(slideIndex, slides,slideTexts,dots) {

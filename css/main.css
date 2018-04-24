@@ -143,7 +143,7 @@ header .main-nav .logo-frame h1 .topper {
   max-width: 100%;
 }
 
-header .main-nav .logo-frame button {
+header .main-nav .logo-frame #navOpener {
   display: block;
   float: right;
   margin: .4rem 0.6rem 0 0;
@@ -151,17 +151,18 @@ header .main-nav .logo-frame button {
   color: #ea4e41;
 }
 
-header .main-nav .logo-frame button span {
+header .main-nav .logo-frame #navOpener span {
   font-size: 1rem;
 }
 
 @media screen and (min-width: 480px) {
-  header .main-nav .logo-frame button {
+  header .main-nav .logo-frame #navOpener {
     display: none;
   }
 }
 
 header .main-nav .navigation {
+  display: none;
   width: 100%;
   background-color: #555;
   padding: 0rem;
@@ -181,6 +182,7 @@ header .main-nav .navigation li a {
 
 @media screen and (min-width: 480px) {
   header .main-nav .navigation {
+    display: block;
     background: transparent;
     padding: .5rem 0 .5rem 2.5rem;
   }
@@ -389,6 +391,8 @@ section.first-page-text {
 
 section.first-page-text p {
   margin: 0 auto 1.5rem auto;
+  text-align: justify;
+  padding: 0 1rem 0 1rem;
 }
 
 section.first-page-text h2 {
@@ -522,6 +526,7 @@ section.first-page-text .progressbar-pic-mobile {
   color: #FFFFFF;
   background-color: #8c8c8c;
   display: flex;
+  flex-direction: column;
   width: 100%;
   margin: 1rem 0;
   padding: 1.5rem;
@@ -529,13 +534,35 @@ section.first-page-text .progressbar-pic-mobile {
   justify-content: center;
 }
 
+.tiles .tile .text {
+  text-align: center;
+}
+
+.tiles .tile .img-frame {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .tiles .tile {
     width: 48%;
   }
+  .tiles .tile .img-frame {
+    width: 115%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    margin: 1rem;
+  }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 1024px) {
   .tiles {
     justify-content: space-between;
   }
@@ -544,11 +571,12 @@ section.first-page-text .progressbar-pic-mobile {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .tiles {
     justify-content: space-between;
   }
   .tiles .tile {
+    flex-direction: row;
     width: 31%;
   }
 }

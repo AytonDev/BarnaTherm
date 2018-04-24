@@ -13,17 +13,17 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Hind:700" rel="stylesheet"> 
-    
     <script src="./js/main.js"></script>
+    <script>startSlider(0)</script>
 </head>
 <body>
     <header>
         <nav class="main-nav">
             <div class="logo-frame">
                 <h1><img src="./img/topper-svg.svg" alt="BarnaTherm" class="topper"></h1>
-                <button type="button" id="navOpener">
+                <div id="navOpener">
                    <span >Menu</span> <i class="fas fa-bars"></i>
-                </button>           
+                </div>           
             </div>
             <ul class="navigation">
                 <li><a class="active" href="#">Aktuality</a></li>
@@ -40,32 +40,30 @@
             <a class="navbar-brand" href="#"><img src="./img/icon_project.png" alt="BarnaTherm" class="icon">Projekty</a>
     </div>
 </header>
-    <div class="slider">
-        <div class="frame slide ">
-            <img src="./img/image.jpg">
-        </div>
-        <div class="frame slide ">
-                <img src="./img/image2.jpg">
-        </div>
-        <div class="frame slide ">
-            <img src="./img/image2.jpg">
-        </div>
-        <div class="frame slide ">
-            <img src="./img/image2.jpg">
-        </div>
-
-        <div class="text-frame">
-            <div class="text-box">
-                <div class="text-item" onclick="getInfo(0)">
-                    <h3><img src="./img/icon_house.png" alt="BarnaTherm" class="icon">Rodinné domy</h3><i class="fas fa-angle-down"></i>
-                    <div class="info" >
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                                    Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus 
+<div class="slider">
+    <div class="frame slide ">
+        <img src="./img/rodinn.jpg">
+    </div>
+    <div class="frame slide ">
+            <img src="./img/komerce.jpg">
+    </div>
+    <div class="frame slide ">
+        <img src="./img/servis.jpg">
+    </div>
+    <div class="frame slide ">
+        <img src="./img/projekt.jpg">
+    </div>
+    <div class="text-frame">
+        <div class="text-box">
+            <div class="text-item" onclick="getInfo(0)">
+                <h3><img src="./img/icon_house.png" alt="BarnaTherm" class="icon">Rodinné domy</h3><i class="fas fa-angle-down"></i>
+                <div class="info" >
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus 
                                     odio a lectus. 
-                        </p>
+                    </p>
                         <button class="btn">Více</button>
-                    </div>
-                   
+                    </div>    
                 </div>
                 <div class="text-item" onclick="getInfo(1)">
                     <h3><img src="./img/icon_industry.png" alt="BarnaTherm" class="icon">Komerční prostory</h3><i class="fas fa-angle-down"></i>
@@ -75,8 +73,7 @@
                                     odio a lectus. 
                         </p>
                         <button class="btn">Více</button>
-                    </div>
-                   
+                    </div>   
                 </div>
                 <div class="text-item" onclick="getInfo(2)">
                         <h3><img src="./img/icon_set.png" alt="BarnaTherm" class="icon">Servis a údržba</h3><i class="fas fa-angle-down"></i>

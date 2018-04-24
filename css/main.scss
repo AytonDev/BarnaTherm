@@ -147,7 +147,7 @@ header {
                     max-width: 100%;
                 }
             }
-            button {
+            #navOpener {
                 display: block;
                 float: right;
                 margin: .4rem 0.6rem 0 0;
@@ -163,6 +163,7 @@ header {
             }
         }
         .navigation{
+            display: none;
             width: 100%;
             background-color: #555;
             padding:  0rem;
@@ -177,6 +178,7 @@ header {
                 }
             } 
             @media screen and (min-width: 480px) {
+                display: block;
                background:  transparent;
                padding: .5rem 0 .5rem 2.5rem;
                 li{
@@ -366,6 +368,8 @@ section.first-page-text {
     text-align: left;
     p {
         margin:  0 auto 1.5rem auto;
+        text-align: justify;
+        padding: 0 1rem 0 1rem;
     }
     h2{
         margin:  0 auto 1.5rem auto;
@@ -468,25 +472,47 @@ section.first-page-text {
         color: $white;
         background-color: $ligthgrey;
         display: flex;
+        flex-direction: column;
         width: 100%;
         margin:  1rem 0;
         padding: 1.5rem;
         align-items: center;
         justify-content: center;
+        .text {
+            text-align: center;
+        }
+        .img-frame {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            overflow: hidden;
+        }
         @media screen and (min-width: 480px) and (max-width: 768px)  {
             width: 48%;
+            .img-frame {
+                width: 115%;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                overflow: hidden;
+                margin: 1rem;
+            }
         }
     }
-    @media screen and (min-width: 480px) and (max-width: 768px)  {
+    @media screen and (min-width: 480px) and (max-width: 1024px)  {
         justify-content: space-between;
        .tile{
             width: 48%;
        }
     }
-    @media screen  and (min-width: 768px)  {
+    @media screen  and (min-width: 1024px)  {
         justify-content: space-between;
        .tile{
-            width: 31%;
+           flex-direction: row;
+           width: 31%;
        }
     }
 }
