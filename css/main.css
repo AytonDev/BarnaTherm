@@ -388,7 +388,7 @@ section.first-page-text .progressbar-pic-mobile {
 
 @-webkit-keyframes mymove {
   from {
-    right: -100%;
+    right: -70%;
     opacity: 0.2;
   }
   to {
@@ -399,7 +399,7 @@ section.first-page-text .progressbar-pic-mobile {
 
 @keyframes mymove {
   from {
-    right: -100%;
+    right: -70%;
     opacity: 0.2;
   }
   to {
@@ -434,7 +434,7 @@ section.first-page-text .progressbar-pic-mobile {
 
 @-webkit-keyframes move {
   from {
-    left: -100%;
+    left: -70%;
     opacity: 0.2;
   }
   to {
@@ -445,7 +445,7 @@ section.first-page-text .progressbar-pic-mobile {
 
 @keyframes move {
   from {
-    left: -100%;
+    left: -70%;
     opacity: 0.2;
   }
   to {

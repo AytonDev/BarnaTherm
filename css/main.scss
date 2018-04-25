@@ -339,12 +339,12 @@ section.first-page-text {
             flex-direction: row;
         }
         @-webkit-keyframes mymove {
-            from {right: -100%; opacity: 0.2;}
+            from {right: -70%; opacity: 0.2;}
             to {right: 0%;  opacity: 1;}
         }
         
         @keyframes mymove {
-            from {right: -100%;  opacity: 0.2;}
+            from {right: -70%;  opacity: 0.2;}
             to {right: 0%;  opacity: 1;}
         }
         &.move {
@@ -367,11 +367,11 @@ section.first-page-text {
             flex-direction: row-reverse;
         }
         @-webkit-keyframes move {
-            from {left: -100%; opacity: 0.2;}
+            from {left: -70%; opacity: 0.2;}
             to {left: 0%; opacity: 1;}
         }
         @keyframes move {
-            from {left: -100%;opacity: 0.2;}
+            from {left: -70%;opacity: 0.2;}
             to {left: 0%; opacity: 1;}
         }
         &.move {
