@@ -290,6 +290,7 @@ header {
                     display: none;
                 }
                 button {
+                    cursor: pointer;
                     color: $white;
                     background-color: $blue;
                     padding: .5rem 2rem;
@@ -349,6 +350,7 @@ header {
                         display: block;
                     }
                     button {
+                        cursor: pointer;
                         padding: .3rem 1.3rem;
                     }
                 }
@@ -412,6 +414,7 @@ section.first-page-text {
     color: $white;
     overflow: hidden;
     button {
+        cursor: pointer;
         background: $white;
     }
     h3{
@@ -511,7 +514,7 @@ section.first-page-text {
     @media screen  and (min-width: 1024px)  {
         justify-content: space-between;
        .tile{
-           flex-direction: row;
+           flex-direction: ro;
            width: 31%;
        }
     }

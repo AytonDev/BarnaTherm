@@ -5,16 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>BARNATHERM - Řešení výtapěcích, chladících a průmyslových energetických systémů</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Hind:700" rel="stylesheet"> 
-    <script src="./js/main.js"></script>
-    <script>startSlider(0)</script>
 </head>
 <body>
     <header>
@@ -25,13 +22,16 @@
                    <span >Menu</span> <i class="fas fa-bars"></i>
                 </div>           
             </div>
-            <ul class="navigation">
-                <li><a class="active" href="#">Aktuality</a></li>
-                <li><a href="#">Dotace</a></li>
-                <li><a href="#">Certifikáty</a></li>
-                <li><a href="#">Kariéra</a></li>
-                <li><a href="#">Kontakty</a></li>
-            </ul>
+            <div class="nav-wrapper">
+                <ul class="navigation">
+                    <li><a class="active" href="#">Aktuality</a></li>
+                    <li><a href="#">Dotace</a></li>
+                    <li><a href="#">Certifikáty</a></li>
+                    <li><a href="#">Kariéra</a></li>
+                    <li><a href="#">Kontakty</a></li>
+                </ul>
+            </div>
+            
         </nav>
     <div class="services-nav">
             <a class="navbar-brand" id="" href="#"><img src="./img/icon_house.png" alt="BarnaTherm" class="icon">Rodinné domy</a>
@@ -223,6 +223,7 @@
         </div>
 
     </footer>
-    
+    <script src="./js/main.js"></script>
+    <script>startSlider(0)</script>
 </body>
 </html>

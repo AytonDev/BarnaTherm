@@ -2,33 +2,38 @@ var slides = document.getElementsByClassName("slide");
 var slideTexts =  document.getElementsByClassName("text-item");
 var dots = document.getElementsByClassName("dot");
 var info = document.getElementsByClassName("info");
+var lastOpen;
 var slideIndex = 3;
 $(document).ready(function(){
     $("#navOpener").click(function(){
-        $(".navigation").toggle();
+        $(".navigation").slideToggle("slow");
     });
+
    
    if(screen.width > 480){
+       console.log("test");
     initSlider(slideIndex, slides,slideTexts, dots);
     /* $(".slider").click(function(){
          slideIndex = nextSlide(slideIndex, slides,slideTexts,dots);
         
       });*/ 
-      
-    
-
    }
    
 
 });
 function startSlider() {
+    if(screen.width > 480)
     setInterval(nextSlide, 5000);
 }
 
 function getInfo(number){
     if(screen.width <= 480){
-        $(info[number]).toggle();
+        if(lastOpen != number)
+            $(info[lastOpen]).slideToggle("slow");
+        $(info[number]).slideToggle("slow");
+        lastOpen = number;
     }
+   
 }
 function getSlide(number){
     if(screen.width > 480){

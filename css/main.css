@@ -314,6 +314,7 @@ header .services-nav a:hover, header .services-nav a.active {
 }
 
 .slider .text-frame .text-box .text-item button {
+  cursor: pointer;
   color: #FFFFFF;
   background-color: #009bcd;
   padding: .5rem 2rem;
@@ -375,6 +376,7 @@ header .services-nav a:hover, header .services-nav a.active {
     display: block;
   }
   .slider .text-frame .text-box .text-item button {
+    cursor: pointer;
     padding: .3rem 1.3rem;
   }
   .slider .text-frame .text-box .dots {
@@ -452,6 +454,7 @@ section.first-page-text .progressbar-pic-mobile {
 }
 
 .lines button {
+  cursor: pointer;
   background: #FFFFFF;
 }
 
@@ -576,7 +579,7 @@ section.first-page-text .progressbar-pic-mobile {
     justify-content: space-between;
   }
   .tiles .tile {
-    flex-direction: row;
+    flex-direction: ro;
     width: 31%;
   }
 }
