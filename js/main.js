@@ -2,7 +2,7 @@ var slides = document.getElementsByClassName("slide");
 var slideTexts =  document.getElementsByClassName("text-item");
 var dots = document.getElementsByClassName("dot");
 var info = document.getElementsByClassName("info");
-var lastOpen;
+var lastOpen=-1;
 var slideIndex = 3;
 $(document).ready(function(){
     $("#navOpener").click(function(){
@@ -28,10 +28,14 @@ function startSlider() {
 
 function getInfo(number){
     if(screen.width <= 480){
-        if(lastOpen != number)
+        if(lastOpen != number && lastOpen !=-1)
             $(info[lastOpen]).slideToggle("slow");
+        if(lastOpen == number)
+                lastOpen = -1;  
+        else 
+            lastOpen = number;                  
         $(info[number]).slideToggle("slow");
-        lastOpen = number;
+        
     }
    
 }
