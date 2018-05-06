@@ -87,7 +87,7 @@ header .main-nav .navigation li a {
     border-bottom: solid;
     border-bottom-color: darkslategray;
     border-bottom-width: 1px;
-    padding: 1rem 0 1rem 3.5rem;
+    padding: 1rem 0 1rem 3.5rem;  
   }
   header .main-nav .navigation li {
     font-size: 1rem;
