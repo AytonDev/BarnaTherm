@@ -62,7 +62,7 @@ header .main-nav .navigation li a {
 @media screen and (min-width: 480px) {
   header .main-nav .navigation {
     display: block;
-    background: transparent;
+    background: #00A1E4;
     padding: .5rem 0 .5rem 2.5rem;
   }
   header .main-nav .navigation li {
@@ -72,7 +72,7 @@ header .main-nav .navigation li a {
     padding: 0 .5rem;
   }
   header .main-nav .navigation li a {
-    color: #ffffff;
+    color: #2f2f2f;
   }
 }
 
