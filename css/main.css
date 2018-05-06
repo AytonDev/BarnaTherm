@@ -1,5 +1,5 @@
 .body {
-  background-color: #009bcd;
+  background-color: #00A1E4;
 }
 
 .body h1 {
@@ -72,7 +72,7 @@ header .main-nav .navigation li a {
     padding: 0 .5rem;
   }
   header .main-nav .navigation li a {
-    color: #2f2f2f;
+    color: #FFFFFF;
   }
 }
 
@@ -84,7 +84,7 @@ header .main-nav .navigation li a {
 
 @media screen and (min-width: 1024px) {
   header .main-nav .navigation {
-    padding: .5rem 0 .8rem 3.5rem;
+    padding: 1rem 0 1rem 3.5rem;
   }
   header .main-nav .navigation li {
     font-size: 1rem;
@@ -203,7 +203,7 @@ header .services-nav.scroll-fixed {
 .slider .text-frame .text-box .text-item button {
   cursor: pointer;
   color: #FFFFFF;
-  background-color: #009bcd;
+  background-color: #00A1E4;
   padding: .5rem 2rem;
 }
 
@@ -423,7 +423,7 @@ section.first-page-text .progressbar-pic-mobile {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: #009bcd;
+  background: #00A1E4;
   width: 100%;
 }
 
