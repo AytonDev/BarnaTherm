@@ -1,9 +1,16 @@
+/**
+ * Slider
+ */
 var slides = document.getElementsByClassName("slide");
 var slideTexts =  document.getElementsByClassName("text-item");
 var dots = document.getElementsByClassName("dot");
 var info = document.getElementsByClassName("info");
 var lastOpen=-1;
 var slideIndex = 3;
+/**
+ * vysouvací dick
+ */
+var currentPosition = 0;
 $(document).ready(function(){
     $("#navOpener").click(function(){
         $(".navigation").slideToggle("slow");
@@ -17,28 +24,38 @@ $(document).ready(function(){
            
         if($(window).scrollTop() > 300) {
             $(".services-nav").addClass("scroll-fixed");
-            $(".services-nav").stop().animate({"marginTop": ($(window).scrollTop()) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, "slow" );
+            $(".services-nav").stop().animate({"marginTop": ($(window).scrollTop()) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, "fast" );
         }
-         
        else {
-        $(".services-nav").stop().animate({"marginTop": 0+ "px", "marginLeft":0 + "px"}, "fast" );
         $(".services-nav").removeClass("scroll-fixed");
-    }
-            
-      });
+        $(".services-nav").stop().css({"marginTop": 0+ "px", "marginLeft":0 + "px"} );
+        
+         }      
+    });
 
-
-
-   
    if(screen.width > 480)
-    initSlider(slideIndex, slides,slideTexts, dots);
+        initSlider(slideIndex, slides,slideTexts, dots);
+    
+    $(".tile-frame").click(function(){
+        var itemID= $(this).closest('[data-index]').data('index');
+        if(itemID === currentPosition)
+            return;
+        else {
+            $(".tiles").find('[data-index="' + currentPosition + '"]').children(".tile-text").removeClass("tile-text-active");
+            $(".tiles").find('[data-index="' + currentPosition + '"]').removeClass("tile-active");
+            $(this).children(".tile-text").addClass(" tile-text-active");
+            $(this).addClass("tile-active");
+            currentPosition = itemID;
+        }    
+
+    });
    
    
 
 });
 function startSlider() {
     if(screen.width > 480)
-    setInterval(nextSlide, 5000);
+         setInterval(nextSlide, 5000);
 }
 
 function getInfo(number){
@@ -66,8 +83,6 @@ function getSlide(number){
     slideIndex = number;
     }
 }
- 
-
 function nextSlide() {
     slides[slideIndex].style.display = "none";
     slideTexts[slideIndex].style.display = "none";
@@ -82,7 +97,6 @@ function nextSlide() {
     dots[slideIndex].classList.add("active");
     //return slideIndex;
 }
-
 function initSlider(slideIndex, slides,slideTexts,dots) {
     for(var i = 0; i < slides.length; ++i){
         console.log(slides.length);
@@ -94,3 +108,6 @@ function initSlider(slideIndex, slides,slideTexts,dots) {
     dots[slideIndex].classList.add("active")
 }
 
+/**
+ * Vysouvací dick
+ */
